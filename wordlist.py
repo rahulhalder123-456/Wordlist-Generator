@@ -14,14 +14,14 @@ def add_leading_zeros(number):
 
 def wordlist_generator():
     # Getting user input without defaults, skipping empty inputs
-    f_name = input("Enter your first name (optional): ")
-    l_name = input("Enter your last name (optional): ")
-    animal = input("Enter your favorite animal (optional): ")
-    pet_name = input("Enter your pet's name (optional): ")
-    number = input("Enter your lucky number (optional): ")
-    favourite = input("Enter your favorite thing (optional): ")
-    movie = input("Enter your favorite movie (optional): ")
-    dob = input("Enter your date of birth (in DDMMYYYY format, optional): ")
+    f_name = input("Enter victim's first name (optional): ")
+    l_name = input("Enter victim's last name (optional): ")
+    animal = input("Enter victim's favorite animal (optional): ")
+    pet_name = input("Enter victim's pet's name (optional): ")
+    number = input("Enter victim's lucky number (optional): ")
+    favourite = input("Enter victim's favorite thing (optional): ")
+    movie = input("Enter victim's favorite movie (optional): ")
+    dob = input("Enter victim's date of birth (in DDMMYYYY format, optional): ")
 
     # Split DOB into day, month, and year if provided
     dob_day = dob[:2] if dob else None
