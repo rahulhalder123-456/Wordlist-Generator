@@ -9,19 +9,19 @@ def generate_case_combinations(word):
 def add_leading_zeros(number):
     """Adds leading zeros to a number if it's a single digit."""
     if len(number) == 1:
-        return ["0" + number, "00" + number]
+        return [number, "0" + number, "00" + number]
     return [number]
 
 def wordlist_generator():
     # Getting user input without defaults, skipping empty inputs
-    f_name = input("Enter victim's first name (optional): ")
-    l_name = input("Enter victim's last name (optional): ")
-    animal = input("Enter victim's favorite animal (optional): ")
-    pet_name = input("Enter victim's pet's name (optional): ")
-    number = input("Enter victim's lucky number (optional): ")
-    favourite = input("Enter victim's favorite thing (optional): ")
-    movie = input("Enter victim's favorite movie (optional): ")
-    dob = input("Enter victim's date of birth (in DDMMYYYY format, optional): ")
+    f_name = input("Enter your first name (optional): ").replace(" ", "")
+    l_name = input("Enter your last name (optional): ").replace(" ", "")
+    animal = input("Enter your favorite animal (optional): ").replace(" ", "")
+    pet_name = input("Enter your pet's name (optional): ").replace(" ", "")
+    number = input("Enter your lucky number (optional): ").replace(" ", "")
+    favourite = input("Enter your favorite thing (optional): ").replace(" ", "")
+    movie = input("Enter your favorite movie (optional): ").replace(" ", "")
+    dob = input("Enter your date of birth (in DDMMYYYY format, optional): ").replace(" ", "")
 
     # Split DOB into day, month, and year if provided
     dob_day = dob[:2] if dob else None
